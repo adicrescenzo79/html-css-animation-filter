@@ -1,0 +1,186 @@
+/* esercizio 1 */
+.ex-1-square{
+  transition: background 2s ease;
+}
+
+.ex-1-square:hover{
+  background-color: red;
+}
+
+/* esercizio 2 */
+.ex-2-square{
+  transition: width 3s ease;
+}
+
+.ex-2-square:active{
+  width: 100%;
+}
+
+/* esercizio 3 */
+.ex-3-square{
+  transition: border-radius 1s ease;
+}
+
+.ex-3-square:hover{
+  border-radius: 100%;
+}
+
+/* esercizio 4 */
+.ex-4-square{
+  transition: background 1s ease;
+}
+
+.ex-4-square:hover{
+  background-color: #ffffff;
+}
+
+/* esercizio 5 */
+.ex-5-square{
+  transition: all 1s ease;
+}
+
+.ex-5-square:hover{
+  width: 80px;
+  height: 80px;
+}
+
+.ex-5-square:active{
+  width: 30px;
+  height: 30px;
+}
+
+/* esercizio 6 */
+.ex-6-img:hover{
+  filter: grayscale(100%);
+}
+
+/* esercizio 7 */
+.ex-7-img{
+  transition: filter 1s ease;
+}
+
+.ex-7-img:hover{
+  filter: sepia(75%) grayscale(50%);
+}
+
+/* esercizio 8 */
+.ex-8-img{
+  transition: all 1s ease;
+}
+
+.ex-8-img:hover{
+  filter: sepia(40%) grayscale(60%);
+  border-radius: 15px;
+}
+
+/* esercizio 9 */
+.ex-9-img{
+  transition: all 1s ease;
+}
+
+.ex-9-img:hover{
+  filter: sepia(40%) grayscale(60%);
+  border-radius: 15px;
+  width: 700px;
+}
+
+/* esercizio 10 */
+@keyframes ex10 {
+  0% {transform: rotate(0deg)}
+  100% {transform: rotate(-360deg)}
+}
+
+.ex-10-icon{
+  animation-name: ex10;
+  animation-timing-function: linear;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+/* esercizio 11 */
+@keyframes ex11 {
+  0% {transform: rotate(0deg)}
+  30% {transform: rotate(120deg)}
+  60% {transform: rotate(240deg)}
+  90% {transform: rotate(350deg)}
+  100% {transform: rotate(-0deg)}
+}
+
+.ex-11-icon:hover{
+  animation-name: ex11;
+  animation-timing-function: linear;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+
+/* esercizio 12 */
+.ex-12-button{
+  position: relative;
+}
+
+@keyframes ex12top {
+  0% {left: 20px}
+  50% {left: calc(100% - 60px)}
+  100% {left: 20px}
+}
+
+.ex-12-button:hover .ex-12-top-white{
+  animation-name: ex12top;
+  animation-timing-function: linear;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  position: absolute;
+}
+
+@keyframes ex12bottom {
+  0% {right: 40px}
+  50% {right: calc(100% - 60px)}
+  100% {right: 40px}
+}
+
+.ex-12-button:hover .ex-12-bottom-white{
+  animation-name: ex12bottom;
+  animation-timing-function: linear;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  position: absolute;
+}
+
+/* esercizio 13 */
+.ex-13-button{
+  position: relative;
+}
+
+@keyframes ex13top {
+  0% {left: 20px; top: -10px}
+  20% {left: calc(100% - 50px); top: -10px}
+  40% {left: calc(100% - 50px); top: calc(100% - 10px)}
+  60% {left: -10px; top: calc(100% - 10px)}
+  80% {left: -10px; top: -10px}
+  100% {left: 20px; top: -10px}
+}
+
+.ex-13-button:hover .ex-13-top-white{
+  animation-name: ex13top;
+  animation-timing-function: linear;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  position: absolute;
+}
+
+@keyframes ex13bottom {
+  0% {right: 20px; bottom: -10px}
+  20% {right: calc(100% - 50px); bottom: -10px}
+  40% {right: calc(100% - 50px); bottom: calc(100% - 10px)}
+  60% {right: -10px; bottom: calc(100% - 10px)}
+  80% {right: -10px; bottom: -10px}
+  100% {right: 20px; bottom: -10px}
+}
+
+.ex-13-button:hover .ex-13-bottom-white{
+  animation-name: ex13bottom;
+  animation-timing-function: linear;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  position: absolute;
+}
